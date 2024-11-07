@@ -129,6 +129,7 @@ public class Bb implements Serializable {
 
         //Affiche le rôle de l'API
         this.reponse += systemRole.toUpperCase(Locale.FRENCH) + "\n";
+        this.systemRoleChangeable = false;
         //Affiche chaque mot de la question un par un et en Majuscule, un mot dans chaque ligne
         String[] tokens = question.split(" ");
         for (String token : tokens) {
